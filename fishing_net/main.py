@@ -10,7 +10,6 @@ import fishing_net.routes.orders as orders
 import fishing_net.routes.position as position
 import fishing_net.routes.history as history
 
-mt5.initialize()
 app = FastAPI()
 app.include_router(security.router, prefix="/security")
 app.include_router(account.router, prefix="/account")
